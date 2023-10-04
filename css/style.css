@@ -100,8 +100,6 @@ h3 {
   text-align: center;
 }
 
-
-
 /* UTILIDADES */
 .w-sm-100 {
   width: 100%;
@@ -117,10 +115,6 @@ h3 {
 
 /* UTILIDADES */
 
-
-
-
-
 /* Navigation */
 .nav-bg {
   background-color: var(--secondary);
@@ -132,19 +126,33 @@ h3 {
   /* justify-content: space-between; */
 }
 
-
+/* @media (width >= 768px) */
 @media (min-width: 768px) {
-    .navigation-main {
-      flex-direction: row;
-      justify-content: space-between;
-    }
-
-    .button{
-        width: auto;
-    }
+  .navigation-main {
+    flex-direction: row;
+    justify-content: space-between;
   }
-  
 
+  .button {
+    width: auto;
+  }
+
+  .services {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+  }
+
+  .fields-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1rem;
+  }
+}
+
+.button:hover {
+  cursor: pointer;
+}
 
 .navigation-main a {
   /* cuando se achique debeara ocupar todo el espacio */
